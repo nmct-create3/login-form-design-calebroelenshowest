@@ -8,6 +8,14 @@
 
 :root {
 
+    --global-text-color: #20223A;
+    --global-background-page-color: #F5F6FA;
+    --global-background-selection-color: #3385FF;
+    --global-anchor-color: #3385FF;
+    --global-anchor-visited-color: #3385FF;
+    --global-anchor-hover-color: #1B4186;
+
+
 }
 
 /* CSS variables here */
