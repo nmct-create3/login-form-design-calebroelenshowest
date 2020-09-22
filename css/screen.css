@@ -487,11 +487,41 @@ a:focus {
     Card with box shadow
 */
 
+.c-card {
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px #9999994d;
+}
+
+.c-card__body {
+    padding: 24px;
+}
+
+.c-card__footer {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #9999994d;
+    padding-top: 24px;
+}
+
+.c-card__title {
+    display: flex;
+    justify-content: center;
+    line-height: 24px;
+    padding-top: 24px;
+}
+
+.c-card__header{
+
+}
+
 /*
     Component: Forms
     ---
     Everything form related here
 */
+
+
 
 /*
     Component: Input
@@ -524,8 +554,9 @@ a:focus {
 
 .c-form-field--option {
     display: flex;
-
+    align-items: center;
 }
+
 
 /*
     Component: Label
