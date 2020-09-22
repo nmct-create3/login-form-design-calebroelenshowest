@@ -5,13 +5,13 @@
 @font-face {
     font-family: "Inter";
     src: url("/fonts/Inter-Regular.woff2") format("woff2");
-    font-weight: 200;
+    font-weight: normal;
 }
 
 @font-face {
     font-family: "Inter";
     src: url("/fonts/Inter-SemiBold.woff2") format("woff2");
-    font-weight: 400;
+    font-weight: bold;
 }
 
 /*------------------------------------*\
@@ -139,6 +139,10 @@ table,
 address,
 figure {
     margin: 0 0 24px;
+}
+
+input {
+    display: block;
 }
 
 ul,
@@ -496,10 +500,31 @@ a:focus {
 */
 
 .c-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    color: var(--global-text-color);
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 11px;
+    outline: none;
+    border-color: #E2E3E7;
 
 }
 
 .c-input:focus {
+    border-color: var(--global-anchor-color);
+    box-shadow: 0 0 0 3px #3385ff4d;
+}
+
+.c-form-field--option {
+    display: flex;
+
 }
 
 /*
@@ -525,23 +550,36 @@ a:focus {
 */
 
 .c-button {
+    color: white;
+    background-color: var(--global-anchor-color);
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    border-radius: 3px;
+    padding: 12px;
+    width: 100%;
+    outline: none;
+    border: 1px #2E77E6;
 
 }
 
 .c-button:hover {
-
+    background-color: #4F95FF;
 }
 
 .c-button:focus {
-
+    border-color: var(--global-anchor-color);
+    box-shadow: 0 0 0 3px #3385ff4d;
 }
 
 .c-button:active {
-
+    background-color: #2E77E6;
+    border-color: #2E77E6;
 }
 
 .c-button--block {
-
+    display: block;
 }
 
 /*------------------------------------*\
