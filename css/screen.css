@@ -452,6 +452,31 @@ a:focus {
     Website main logo
 */
 
+.c-logo {
+    height: 24px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.c-logo__symbol {
+    height: 100%;
+    display: block;
+}
+
+.c-logo__path--1 {
+    fill: var(--global-text-color);
+}
+
+.c-logo__path--2 {
+    fill: var(--global-background-selection-color)
+}
+
+.c-logo__path--3 {
+    fill: var(--global-anchor-hover-color)
+}
+
+
 /*
     Component: Card
     ---
