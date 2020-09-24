@@ -227,7 +227,9 @@ a:focus {
 }
 
 .o-row--login {
-
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
 }
 
 /* size modifiers */
