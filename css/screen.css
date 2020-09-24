@@ -27,6 +27,21 @@
     --global-anchor-visited-color: #3385FF;
     --global-anchor-hover-color: #1B4186;
     --global-font: "Inter", sans-serif, "Verdana";
+    --global-box-shadow-color: #9999994d;
+    --global-button-border-color: #2E77E6;
+
+    /* GrayScale */
+    --global-color-neutral-xxxx-light: #F5F6FA;
+    --global-color-neutral-xxx-light: #E2E3E7;
+    --global-color-neutral-xx-light: #CACCD4;
+    --global-color-neutral-x-light: #B5B6C0;
+    --global-color-neutral-light: #A0A1AD;
+    --global-color-neutral: #8B8C9A;
+    --global-color-neutral-dark: #757787;
+    --global-color-neutral-x-dark: #606274;
+    --global-color-neutral-xx-dark: #4B4C60;
+    --global-color-neutral-xxx-dark: #35374D;
+    --global-color-neutral-xxxx-dark: #20223A;
 
 }
 
@@ -490,7 +505,7 @@ a:focus {
 .c-card {
     background-color: white;
     border-radius: 2px;
-    box-shadow: 0 0 0 1px #9999994d;
+    box-shadow: 0 0 0 1px var(--global-box-shadow-color);
 }
 
 .c-card__body {
@@ -500,7 +515,7 @@ a:focus {
 .c-card__footer {
     display: flex;
     justify-content: center;
-    border-top: 1px solid #9999994d;
+    border-top: 1px solid var(--global-box-shadow-color);
     padding-top: 24px;
 }
 
@@ -534,8 +549,8 @@ a:focus {
     -moz-appearance: none;
     appearance: none;
     width: 100%;
-    border-radius: 3px;
-    border-width: 1px;
+    border-radius: 2px;
+    border-width: 2px;
     border-style: solid;
     color: var(--global-text-color);
     font-family: inherit;
@@ -543,13 +558,13 @@ a:focus {
     line-height: 24px;
     padding: 11px;
     outline: none;
-    border-color: #E2E3E7;
+    border-color: var(--global-background-page-color);
 
 }
 
 .c-input:focus {
     border-color: var(--global-anchor-color);
-    box-shadow: 0 0 0 3px #3385ff4d;
+    box-shadow: 0 0 0 3px var(--global-anchor-hover-color)4d;
 }
 
 .c-form-field--option {
@@ -599,7 +614,8 @@ a:focus {
     padding: 12px;
     width: 100%;
     outline: none;
-    border: 1px #2E77E6;
+    border: 1px var(--global-button-border-color);
+    cursor: pointer;
 
 }
 
@@ -609,12 +625,12 @@ a:focus {
 
 .c-button:focus {
     border-color: var(--global-anchor-color);
-    box-shadow: 0 0 0 3px #3385ff4d;
+    box-shadow: 0 0 0 3px var(--global-anchor-hover-color)4d;
 }
 
 .c-button:active {
-    background-color: #2E77E6;
-    border-color: #2E77E6;
+    background-color: var(--global-button-border-color);
+    border-color: var(--global-button-border-color);
 }
 
 .c-button--block {
